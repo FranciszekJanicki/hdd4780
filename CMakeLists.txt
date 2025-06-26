@@ -4,10 +4,8 @@ target_sources(hdd4780 PRIVATE
     "hdd4780.c"
 )
 
-target_include_directories(hdd4780 PUBLIC 
-)
-
-target_link_libraries(hdd4780 PRIVATE
+target_include_directories(hdd4780 PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 target_compile_options(hdd4780 PUBLIC
