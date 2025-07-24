@@ -24,7 +24,9 @@ hdd4780_err_t hdd4780_send_clear_display_cmd(hdd4780_t const* hdd4780);
 
 hdd4780_err_t hdd4780_send_return_home_cmd(hdd4780_t const* hdd4780);
 
-hdd4780_err_t hdd4780_send_entry_mode_set_cmd(hdd4780_t const* hdd4780, uint8_t id, uint8_t s);
+hdd4780_err_t hdd4780_send_entry_mode_set_cmd(hdd4780_t const* hdd4780,
+                                              uint8_t id,
+                                              uint8_t s);
 
 hdd4780_err_t hdd4780_send_display_on_off_control_cmd(hdd4780_t const* hdd4780,
                                                       uint8_t d,
@@ -40,10 +42,14 @@ hdd4780_err_t hdd4780_send_function_set_cmd(hdd4780_t const* hdd4780,
                                             uint8_t n,
                                             uint8_t f);
 
-hdd4780_err_t hdd4780_send_set_cgram_address_cmd(hdd4780_t const* hdd4780, uint8_t acg);
+hdd4780_err_t hdd4780_send_set_cgram_address_cmd(hdd4780_t const* hdd4780,
+                                                 uint8_t acg);
 
-hdd4780_err_t hdd4780_send_set_ddram_address_cmd(hdd4780_t const* hdd4780, uint8_t add);
+hdd4780_err_t hdd4780_send_set_ddram_address_cmd(hdd4780_t const* hdd4780,
+                                                 uint8_t add);
 
-hdd4780_err_t hdd4780_send_read_busy_flag_cmd(hdd4780_t const* hdd4780, uint8_t bf, uint8_t ac);
+hdd4780_err_t hdd4780_send_read_busy_flag_cmd(hdd4780_t const* hdd4780,
+                                              uint8_t bf,
+                                              uint8_t ac);
 
 #endif // HDD4780_HDD4780_H
