@@ -5,6 +5,10 @@
 #include "hdd4780_config.h"
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct {
     hdd4780_config_t config;
     hdd4780_interface_t interface;
@@ -51,5 +55,9 @@ hdd4780_err_t hdd4780_send_set_ddram_address_cmd(hdd4780_t const* hdd4780,
 hdd4780_err_t hdd4780_send_read_busy_flag_cmd(hdd4780_t const* hdd4780,
                                               uint8_t bf,
                                               uint8_t ac);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // HDD4780_HDD4780_H

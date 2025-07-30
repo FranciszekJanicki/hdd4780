@@ -3,6 +3,10 @@
 
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef enum {
     HDD4780_CMD_CLEAR_DISPLAY = 0x01,
     HDD4780_CMD_RETURN_HOME = 0x02,
@@ -14,5 +18,9 @@ typedef enum {
     HDD4780_CMD_SET_DDRAM_ADDRESS = 0x80,
     HDD4780_CMD_READ_BUSY_FLAG_AND_ADDRESS = 0x00,
 } hdd4780_cmd_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // HDD4780_HDD4780_COMMANDS_H

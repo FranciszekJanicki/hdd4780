@@ -5,6 +5,10 @@
 #include <stddef.h>
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define HDD4780_DEVICE_ADDRESS 0x27
 
 #define HDD4780_LINE_WIDTH 16U * 5U
@@ -67,5 +71,9 @@ typedef struct {
     hdd4780_err_t (*bus_deinitialize)(void*);
     hdd4780_err_t (*bus_transmit)(void*, uint8_t const*, size_t);
 } hdd4780_interface_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // HDD4780_HDD4780_CONFIG_H
